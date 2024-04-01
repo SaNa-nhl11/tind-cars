@@ -1,0 +1,230 @@
+body {
+    background-color: #31363F;
+}
+
+/*navbar background*/
+#section {
+    background-image: url(menubgimg.jpg);
+}
+
+
+ /*to make the navbar responsive*/
+@media (min-width: 990px) {   
+  
+.tindcars {
+       position: relative;
+       left: 31%;
+  }
+  
+}
+
+@media (max-width: 991px) {
+    .tindcars { 
+       position: static;
+    }
+ }
+
+
+/*menu elements*/
+.divs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.divs1 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*menu links*/
+ .menu-links {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+ }
+
+/*all links*/
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+ }
+  
+/*background img*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  /*search box*/
+  .search {
+    position: absolute;
+    top: 13%;
+    right: 27%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    font-size: 1rem;
+  }
+
+  /*search*/
+  .text {
+    border-radius: 15px;
+    border: 1px #000 solid;
+    text-align: center; 
+    background-color: transparent;
+  }
+
+
+  /* features*/
+  #features {
+    padding:5% 15% ;
+    text-align: center;
+    background-color: white;
+ }
+
+ .icon {
+    margin-bottom: 20px;
+    padding: 20px ;
+ }
+
+ .icon:hover {             /*pseudo class*/
+  color: #31363F;
+}
+
+/*the slideshow*/
+ #Ecars{
+    padding: 4% 15% 4% 15% ;
+    text-align: center;
+    background-color: #31363F;
+    color: white;
+ }
+
+/*slide show imgs*/
+ .imgs {
+    width: 50%;
+    height:50%;
+}
+
+
+/*table */
+.center {
+    width: 60%;
+    margin: 4% auto 50px auto;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px;
+
+  }
+
+  /*left side*/
+  .td {
+    width:40%;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px 0 0 20px;
+    background-color: #BFFF00;
+  }
+
+  /*right side*/
+  .td2 {
+    background-color:#E5E1DA;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+  }
+
+  /*the second table*/
+  /*left side*/
+  .td01 {
+    background-color: #E5E1DA;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+  }  
+ 
+  /*right side*/
+  .td02{
+    background-color: #ff6663;
+    width:43%;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 0 20px 20px 0 ;
+  }
+
+
+  /*reviews slidshow*/
+  #reviews {
+    padding: 7% 15% ;
+    text-align: center;
+    background-color: #31363F;
+    color: white;
+}
+
+/*reviews imgs*/
+.rimg {
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 100%; 
+    width:15%;  
+}
+
+@media (max-width: 1237px) {
+  .rimg {
+    width: 25%;
+    margin-left: 100px;
+  }
+}
+
+/*reviews*/
+.h2 {
+  font-size: 150%;
+}
+
+
+/*apple indroid*/
+
+#Download {
+  background-color: white;
+  text-align: center;
+  font-family: "Montserrat-Black 900";
+  padding: 70px;
+}
+
+#h3 {
+  font-size: 3rem ;
+  padding-bottom: 30px;
+}
+
+/*buttons*/
+.btn {
+  min-width: 200px;
+  margin-left: 40px;
+}
+
+@media (max-width:641px ) {
+  .btn {
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+#footer {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/*fb insta twitter icons*/
+.icons {
+  padding: 20px ;
+  color:#E5E1DA;
+}
+
+/*copyright*/
+#p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+  color: #B4B4B8;
+}

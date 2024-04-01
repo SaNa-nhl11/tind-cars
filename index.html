@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tind Cars</title>
+    
+  <!--font awesome setup-->
+  <script src="https://kit.fontawesome.com/8a5ccf4c59.js" crossorigin="anonymous"></script>
+
+  <!--bootstrap setup for css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--bootstrap setup for javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!--my css-->
+<link rel="stylesheet" href="styles.css">
+
+  <style>
+    .navbar-brand {
+    font-size: 3rem;
+}
+
+@media (max-width: 642px) {
+  .tindcars { 
+    font-size: 2.5rem;
+ }
+ .menu {
+   min-width: 100px;
+  margin-bottom: 0;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+
+     <!--------navbar-------->
+
+      <section id="section">
+     <nav class="navbar navbar-dark navbar-expand-lg ">
+
+         <a class="btn btn-outline-dark menu" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions" style="margin-left: 10px;">Menu</a>
+            
+        <a class="navbar-brand tindcars" href="">Tind Cars</a>
+
+         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+         <ul class="navbar-nav ms-auto" style="text-align: end;" >
+            <li class="nav-item ">
+                <a class="nav-link" id="login" href="#" style="margin-right: 10px;"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+            <li class="nav-item " >
+                <a class="nav-link " id="sign-up" href="#" style="margin-right: 10px;"><i class="fa-regular fa-user"></i> sign-up</a>
+            </li>
+         </ul>
+         </div>
+      </nav>
+
+      <!--Menu-->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Tind cars</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      
+          <div class="offcanvas-body">
+            <div class="dropdown mt-3" style="margin-top: 0 !important;">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                BUY
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #31363F;">
+                <li><a class="dropdown-item" href="#">New Cars</a></li>
+                <li><a class="dropdown-item" href="#">Used Cars</a></li>
+              </ul>
+            </div>
+
+            <div class="divs1">
+              <button type="button" class="btn btn-secondary"><a href="" class="menu-links">SELL</a></button>
+            </div>
+
+            <div class="divs">
+              <button type="button" class="btn btn-secondary"><a href="" class="menu-links">Help</a></button>
+             </div>
+
+             <div class="divs">
+              <button type="button" class="btn btn-secondary"><a href="" class="menu-links">Contact US</a></button>
+             </div>
+          </div>
+      </div>
+    </section>
+
+    <!-----------Home page---------->
+
+
+    <!--First part img and search-->
+
+     <img src="img3.jpg" alt="porche" class="responsive">
+
+     <form class="search">
+      <input type="text" id="fname" name="fname" placeholder="Search" class="text" >
+    </form>
+
+    <!--Second part features-->
+    <h1 style="text-align: center; margin-top: 3%;margin-bottom: 3%; color: white;">Look for your favourite car</h1>
+
+    <section id="features">
+      <div class="row">
+      
+         <div class="col-lg-4">
+          <i class="fa-regular fa-handshake icon fa-4x" ></i>
+          <h3>Trusted deals </h3>
+          <p>most secure and safe place to check cars</p>
+         </div>
+   
+         <div class="col-lg-4">
+           <i class="fa-regular fa-credit-card icon fa-4x"  ></i>
+           <h3>Pyamenet flexebility</h3>
+           <p>We accept all types of payement cards or digital currency</p>
+         </div>
+   
+         <div class="col-lg-4">
+           <i class="fa-solid fa-car-side icon fa-4x" ></i>
+           <h3>Guaranteed statisfiction</h3>
+           <p>various models with various qualities to meet your nead</p>
+         </div>
+   
+       </div>
+    </section>
+
+
+          <!-- third part Exemples-->
+
+ <!--bootstrap carousel-->
+
+ <h1 style="text-align: center; margin-top: 3%;margin-bottom: 0; color: white;">Featured Cars</h1>
+
+<section id="Ecars">
+
+  <div class="carousel slide" id="testim">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href=""><img class="imgs" src="mercedes2.jpg" alt=""></a>
+        <h2>Mercedes-AMG GT</h2>
+        <h2>price: 00.00$</h2>
+     </div>
+
+      <div class="carousel-item">
+        <a href=""><img class="imgs" src="mercedes.jpg" alt=""></a>
+          <h2>MERCEDES CLASSE G 63 AMG</h2>
+          <h2>price: 00.00$</h2>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#testim" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testim" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<div class="text-center">
+<button type="button" class="btn btn-primary btn-lg" style="padding-left: 3%; padding-right: 3%; margin-right: 3%; ">View all Cars</button>
+</div>
+              <!--forth part buy and sell-->
+
+    <!--Buy-->
+
+    <table class="center" >
+      <thead>
+      </thead>
+      <tbody> 
+      <tr> 
+        <td class="td" style="padding: 30px 40px ; "><h1>Buying A New Car ?</h1><br>
+            <p style="font-size: 130%;">Leave the headache to us and focus <br> on what matters, your new ride</p> <br><br><br><br>
+            <button type="button" class="btn btn-secondary">buy a new car  <i class="fa-solid fa-arrow-right" style="padding-left: 15px;"></i> </button>
+          </td>
+          <td class="td2 " style="padding: 20px 20px 20px 20px;">
+            <h2><i class="fa-regular fa-face-smile fa-bounce" style="padding-right: 5px;"></i> your smoothest experience</h2>
+            <p>we have made it as easy as possible</p><br>
+
+            <h2><i class="fa-regular fa-circle-check fa-fade"  style="padding-right: 15px;"></i>Your expert advisors</h2>
+            <p>we are with you at every step</p><br>
+
+            <h2><i class="fa-solid fa-shield-halved fa-beat" style="padding-right: 17px;"></i>Your trusted partner</h2>
+            <p>rated 4.8 on google. safe and secure</p>
+          </td>
+  
+</tr>
+
+<!--Sell-->
+<table class="center" >
+  <thead>
+  </thead>
+  <tbody>
+  <tr> 
+      <td class="td01" style="padding: 20px 20px 20px 20px;">
+        <h2><i class="fa-regular fa-face-smile fa-bounce" style="padding-right: 5px;"></i> your smoothest experience</h2>
+        <p>we have made it as easy as possible</p><br>
+
+        <h2><i class="fa-regular fa-circle-check fa-fade"  style="padding-right: 15px;"></i>Your expert advisors</h2>
+        <p >we are with you at every step</p><br>
+
+        <h2><i class="fa-solid fa-shield-halved fa-beat" style="padding-right: 17px;"></i>Your trusted partner</h2>
+        <p>rated 4.8 on google. safe and secure</p>
+      </td>
+
+      <td class="td02" style="padding: 30px 40px ; "><h1>Selling A New Car ?</h1><br>
+        <p style="font-size: 130%;">We take care of everything, so you can focus <br> on what matters, getting a fair deal.</p> <br><br><br><br>
+        <button type="button" class="btn btn-secondary">sell a used car  <i class="fa-solid fa-arrow-right" style="padding-left: 15px;"></i> </button>
+      </td>
+</tr>
+
+
+<!--idk why but anything directly under a table becomes above it-->
+<table>
+  <thead>
+  </thead>
+  <tbody>
+  <tr> 
+     <td>
+      </td>
+</tr>
+
+
+         <!--fifth part reviews-->
+      <section id="reviews">
+        <div id="lol" class="carousel slide">
+          <div class="carousel-inner">
+    
+            <div class="carousel-item active">
+              <h2 class="h2">Excellent service by the team, thinking about investing on the website for tesla products</h2>
+              <img src="gettyimages-1499013102-612x612.jpg" alt="" class="rimg">
+              <em>Elon Musk</em>
+           </div>
+    
+            <div class="carousel-item">
+              <h2 class="h2">One of the best car-related bussiness websites, be sure to use for your next car</h2>
+              <img src="0x0.jpg" alt="" class="rimg" >
+              <em>Bill Gates</em>
+            </div>
+
+            <div class="carousel-item">
+              <h2 class="h2">I loved the service so much no false informations <!--just false reviews--> and no delays, thanks a lot to tind cars</h2>
+              <img class="rimg" src="277790911_320782870151855_7190007208160089076_nn.jpg" alt="lady-profile">
+              <em>Random Girl</em>
+            </div>
+
+          </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#lol" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#lol" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    </section>
+    
+
+              <!--sixth and last part copyright and credits -->
+
+       <section id="Download">
+
+        <h3 id="h3">Get our service right now and find your best Car</h3>
+        <button type="button" class="btn btn-outline-danger"> <i class="fa-brands fa-apple"></i> Download</button>   
+        <button type="button" class="btn btn-outline-success"><i class="fa-brands fa-google-play"></i> Download</button>
+    
+      </section>
+    
+      <!-- Footer -->
+    
+      <footer id="footer">
+        <i class="icons fa-brands fa-twitter fa-2x"></i>
+        <i class="icons fa-brands fa-facebook fa-2x"></i>
+        <i class="icons fa-brands fa-instagram fa-2x"></i>
+        <i class="icons fa-regular fa-envelope fa-2x"></i>
+    
+       <a href=""><p id="p">© Copyright2024 Tind Cars</p></a>
+      </footer>
+
+</body>
+</html>
