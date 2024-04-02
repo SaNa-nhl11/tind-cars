@@ -113,7 +113,6 @@ body {
     border-spacing: 0;
     border-collapse: separate;
     border-radius: 20px;
-
   }
 
   /*left side*/
@@ -227,4 +226,37 @@ body {
   padding-top: 20px;
   font-size: 2rem;
   color: #B4B4B8;
+}
+
+/*car exemples*/
+#Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+  width:80%;
+ }
+
+/*responsive for phones*/
+@media (max-width:489px) {
+  .td2 {
+    display: none;
+  }
+
+  .td01 {
+    display: none;
+  }
+
+  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+    width:100%;
+   }
+
+   .btn {
+    margin-left: 0;
+
+  }
+} 
+
+/*responsive for tablets*/
+@media (max-width: 990px)  {
+  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+    width:100%;
+   }
+
 }
