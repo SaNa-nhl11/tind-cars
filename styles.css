@@ -74,7 +74,6 @@ body {
     background-color: transparent;
   }
 
-
   /* features*/
   #features {
     padding:5% 15% ;
@@ -235,6 +234,10 @@ body {
 
 /*responsive for phones*/
 @media (max-width:489px) {
+  .search{
+    display: none;
+  }
+  
   .td2 {
     display: none;
   }
