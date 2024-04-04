@@ -1,5 +1,6 @@
 body {
     background-color: #31363F;
+
 }
 
 /*navbar background*/
@@ -55,18 +56,36 @@ body {
     height: auto;
     width: 100%;
   }
-
-  /*search box*/
-  .search {
-    position: absolute;
-    top: 13%;
-    right: 27%;
-    border-radius: 15px;
-    border: 1px #000 solid;
-    font-size: 1rem;
+  
+/*home page img*/
+  .homep {
+    background-image: url(img4.jpg); 
+    background-size: cover;
+     background-position: center; 
+     background-repeat: no-repeat; 
+     width: 100%;
+     height: 118vh;
   }
 
-  /*search*/
+  .search {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    border-radius: 30px;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width:600px) {
+    .search {
+      left: 30%;
+      font-size: 1rem;
+      width: 200px;
+    }
+  }
+
+  /*search text*/
   .text {
     border-radius: 15px;
     border: 1px #000 solid;
@@ -87,7 +106,7 @@ body {
  }
 
  .icon:hover {             /*pseudo class*/
-  color: #31363F;
+  color:grey;
 }
 
 /*the slideshow*/
@@ -234,16 +253,25 @@ body {
 
 /*responsive for phones*/
 @media (max-width:489px) {
+  /*
   .search{
     display: none;
   }
-  
+  */
+  .td {
+    border-radius:20px;
+  }
+
   .td2 {
     display: none;
   }
 
   .td01 {
     display: none;
+  }
+
+  .td02 {
+    border-radius: 20px ;
   }
 
   #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
