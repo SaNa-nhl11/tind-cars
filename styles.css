@@ -230,6 +230,7 @@ body {
 #footer {
   text-align: center;
   padding: 40px 20px;
+  color: white;
 }
 
 /*fb insta twitter icons*/
@@ -243,7 +244,7 @@ body {
   text-align: center;
   padding-top: 20px;
   font-size: 2rem;
-  color: #B4B4B8;
+  color:black; /*#B4B4B8*/
 }
 
 /*car exemples*/
