@@ -1,20 +1,19 @@
 body {
     background-color: #31363F;
-
 }
 
 /*navbar background*/
 #section {
-    background-image: url(menubgimg.jpg);
+    background-image: url(../imgs/menubgimg.jpg);    /* ../ represents the parent of the current folder*/
 }
 
-
  /*to make the navbar responsive*/
-@media (min-width: 990px) {   
+
+@media (min-width: 991px) {   
   
 .tindcars {
-       position: relative;
-       left: 31%;
+       position: absolute;
+       left: 43vw;
   }
   
 }
@@ -59,7 +58,7 @@ body {
   
 /*home page img*/
   .homep {
-    background-image: url(img4.jpg); 
+    background-image: url(../imgs/img4.jpg); 
     background-size: cover;
      background-position: center; 
      background-repeat: no-repeat; 
@@ -84,6 +83,11 @@ body {
       width: 200px;
     }
   }
+
+  /*the team didn't like the search bar sadly*/
+.search{
+  display: none;
+}
 
   /*search text*/
   .text {
@@ -117,12 +121,18 @@ body {
     color: white;
  }
 
-/*slide show imgs*/
- .imgs {
-    width: 50%;
-    height:50%;
-}
+/*slide show imgs : car exemples*/
+#Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+  width:80%;
+ }
 
+/*responsive for tablets*/
+@media (max-width: 990px)  {
+  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+    width:100%;
+   }
+
+}
 
 /*table */
 .center {
@@ -170,6 +180,34 @@ body {
     border-radius: 0 20px 20px 0 ;
   }
 
+/*responsive for phones table + car exemples*/
+@media (max-width:489px) {
+
+  .td {
+    border-radius:20px;
+  }
+
+  .td2 {
+    display: none;
+  }
+
+  .td01 {
+    display: none;
+  }
+
+  .td02 {
+    border-radius: 20px ;
+  }
+
+  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
+    width:100%;
+   }
+
+   .btn {
+    margin-left: 0;
+
+  }
+} 
 
   /*reviews slidshow*/
   #reviews {
@@ -217,78 +255,91 @@ body {
 /*buttons*/
 .btn {
   min-width: 200px;
-  margin-left: 40px;
+
 }
 
-@media (max-width:641px ) {
+@media (min-width:560px) {
   .btn {
-    min-width: 200px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:582px ) {
+  .btn {
     margin-bottom: 20px;
   }
 }
+
+/*footer*/
 
 #footer {
   text-align: center;
   padding: 40px 20px;
   color: white;
-}
+} 
+
 
 /*fb insta twitter icons*/
 .icons {
   padding: 20px ;
-  color:#E5E1DA;
+}
+
+#container1 {
+  margin-top: 30px;
+}
+
+.leftpart {
+  width: 32%; 
+  float: left; 
+  padding: 10px;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.middlepart {
+  width: 35%; 
+  float: left; 
+  padding: 10px;
+  text-align: center;
+  line-height: 2.3;
+  padding-top:20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.rightpart {
+  width: 32%; 
+  float: left; 
+  padding: 10px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+#getT {
+padding-bottom: 10px;
+padding-left: 10px;
+}
+
+#realfooter {
+  text-align: center; 
+  display: block; 
+  clear: both; 
+  padding:20px;
+  background-color: #31363F;
+}
+
+@media screen and (max-width:600px){
+  .leftpart,.middlepart,.rightpart {
+    width: 100%;
+    padding-top: 10px;
+  }
 }
 
 /*copyright*/
+
 #p {
   text-align: center;
   padding-top: 20px;
   font-size: 2rem;
-  color:black !important; /*#B4B4B8*/
-}
-
-/*car exemples*/
-#Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
-  width:80%;
- }
-
-/*responsive for phones*/
-@media (max-width:489px) {
-  /*
-  .search{
-    display: none;
-  }
-  */
-  .td {
-    border-radius:20px;
-  }
-
-  .td2 {
-    display: none;
-  }
-
-  .td01 {
-    display: none;
-  }
-
-  .td02 {
-    border-radius: 20px ;
-  }
-
-  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
-    width:100%;
-   }
-
-   .btn {
-    margin-left: 0;
-
-  }
-} 
-
-/*responsive for tablets*/
-@media (max-width: 990px)  {
-  #Ecars > .carousel > .carousel-inner > .carousel-item > a > .imgs {
-    width:100%;
-   }
-
+  color:#B21D27;
 }
