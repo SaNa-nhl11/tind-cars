@@ -4,7 +4,7 @@ body {
 
 /*navbar background*/
 #section {
-    background-image: url(../imgs/menubgimg.jpg);    /* ../ represents the parent of the current folder*/
+    background-image: url(imgs/menubgimg.jpg);    /* ../ represents the parent of the current folder*/
 }
 
  /*to make the navbar responsive*/
@@ -58,7 +58,7 @@ body {
   
 /*home page img*/
   .homep {
-    background-image: url(../imgs/img4.jpg); 
+    background-image: url(imgs/img4.jpg); 
     background-size: cover;
      background-position: center; 
      background-repeat: no-repeat; 
